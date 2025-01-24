@@ -1,31 +1,101 @@
 /* You can add global styles to this file, and also import other style files */
 
+@font-face {
+  font-family: "Rubik";
+  src: url("assets/fonts/Rubik-Black.ttf") format("ttf"),
+    url("assets/fonts/Rubik-BlackItalic.ttf") format("ttf"),
+    url("assets/fonts/Rubik-Bold.ttf") format("ttf"),
+    url("assets/fonts/Rubik-BoldItalic.ttf") format("ttf"),
+    url("assets/fonts/Rubik-ExtraBold.ttf") format("ttf"),
+    url("assets/fonts/Rubik-ExtraBoldItalic.ttf") format("ttf"),
+    url("assets/fonts/Rubik-Italic.ttf") format("ttf"),
+    url("assets/fonts/Rubik-Light.ttf") format("ttf"),
+    url("assets/fonts/Rubik-LightItalic.ttf") format("ttf"),
+    url("assets/fonts/Rubik-Medium.ttf") format("ttf"),
+    url("assets/fonts/Rubik-MediumItalic.ttf") format("ttf"),
+    url("assets/fonts/Rubik-Regular.ttf") format("ttf"),
+    url("assets/fonts/Rubik-SemiBold.ttf") format("ttf"),
+    url("assets/fonts/Rubik-SemiBoldItalic.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 div {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 p {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 h1 {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 h2 {
-    padding: 0px;
-    margin: 0px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.org {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  .org-header {
+    width: 100vw;
+    height: 50px;
+    background: #aaaaaa;
+
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    font-family: "Rubik", sans-serif;
+
+    .org-header-text {
+      font-size: 15px;
+    }
+  }
+
+  .org-body {
+    width: 60vw;
+    height: 60vw;
+    background: #666666;
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+  }
+
+  .org-footer {
+    width: 100vw;
+    height: 50px;
+    background: #aaaaaa;
+  }
 }
