@@ -53,49 +53,62 @@ h2 {
 .org {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   height: 100vh;
 
-  .org-header {
-    width: 100vw;
-    height: 50px;
-    background: #aaaaaa;
+  background-image: url("../src/assets/images/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    color: white;
-
-    font-family: "Rubik", sans-serif;
-
-    .org-header-text {
-      font-size: 15px;
-    }
-  }
-
-  .org-body {
-    width: 60vw;
-    height: 60vw;
-    background: #666666;
-    border-radius: 20px;
-    padding: 20px;
-
+  .input-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 32px;
+
+    background-color: #131316;
+    height: 30vh;
+    width: 30vh;
+
+    border-radius: 2vh;
+
     align-items: center;
+    justify-content: center;
+    padding: 6vw 4vw;
 
-    .input-container {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+    h2 {
+        font-family: Rubik, sans-serif;
+        color: white;
+        font-size: 24px;
     }
-  }
 
-  .org-footer {
-    width: 100vw;
-    height: 50px;
-    background: #aaaaaa;
+    .input-section {
+        button {
+            font-family: Rubik, sans-serif;
+            width: 170px;
+            height: 35px;
+            background-color: #1570EF;
+            color: #CFCFCF;
+        }
+    }
+
+    .desc-tag {
+        display: flex;
+        flex-direction: row;
+
+        p {
+            font-family: Rubik, sans-serif;
+            font-size: 15px;
+        }
+
+        .desc-1{
+            color: #70707B;
+        }
+
+        .desc-2 {
+            color: #1570EF;
+        }
+    }
   }
 }
