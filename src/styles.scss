@@ -78,37 +78,85 @@ h2 {
     padding: 6vw 4vw;
 
     h2 {
-        font-family: Rubik, sans-serif;
-        color: white;
-        font-size: 24px;
+      font-family: Rubik, sans-serif;
+      color: #fafafa;
+      font-size: 20px;
     }
 
     .input-section {
-        button {
-            font-family: Rubik, sans-serif;
-            width: 170px;
-            height: 35px;
-            background-color: #1570EF;
-            color: #CFCFCF;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+
+      .input-field {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        width: 25vh;
+
+        p {
+          font-family: Rubik, sans-serif;
+          font-size: 14px;
+          color: #d1d1d6;
         }
+
+        input {
+          background: transparent;
+          border-radius: 5px;
+          border: 2px solid #194185;
+          padding: 12px;
+
+          &:hover {
+            border: 2px solid #4caf50;
+          }
+        }
+      }
+
+      button {
+        font-family: Rubik, sans-serif;
+        width: 170px;
+        height: 35px;
+        background-color: #1570ef;
+        color: #cfcfcf;
+
+        border: none;
+        border-radius: 6px;
+
+        cursor: pointer;
+
+        transition: background-color 0.3s, opacity 0.3s ease-in-out;
+
+        &:hover {
+          background-color: #4caf50;
+          color: #cfcfcf;
+          border-color: #4caf50;
+        }
+      }
     }
 
     .desc-tag {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
 
-        p {
-            font-family: Rubik, sans-serif;
-            font-size: 15px;
-        }
+      p {
+        font-family: Rubik, sans-serif;
+        font-size: 12px;
+      }
 
-        .desc-1{
-            color: #70707B;
-        }
+      .desc-1 {
+        color: #70707b;
+      }
 
-        .desc-2 {
-            color: #1570EF;
+      .desc-2 {
+        color: #1570ef;
+        cursor: pointer;
+
+        &:hover {
+          color: #4caf50;
         }
+      }
     }
   }
 }
