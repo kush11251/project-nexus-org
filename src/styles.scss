@@ -65,10 +65,9 @@ h2 {
   .input-container {
     display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 4vh;
 
     background-color: #131316;
-    height: 30vh;
     width: 30vh;
 
     border-radius: 2vh;
@@ -86,14 +85,14 @@ h2 {
     .input-section {
       display: flex;
       flex-direction: column;
-      gap: 24px;
+      gap: 2vh;
       justify-content: center;
       align-items: center;
 
       .input-field {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 1.5vh;
         width: 25vh;
 
         p {
